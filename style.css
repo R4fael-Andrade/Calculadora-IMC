@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+*{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    border-style: none;
+    color: #fff;
+  
+}
+
+body {
+   
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-image: url('./assets/fundo-pag.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: #000; */
+   
+}
+
+.logo{
+    display: flex;
+    width: 65px;
+    height: 65px;
+    flex-direction: column;
+    border-radius: 50%; 
+    margin-top: 10px;
+    
+
+}
+
+.logo-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.main-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    color: #ff6600;
+    font-family: 'Gabarito', sans-serif; 
+}
+
+.card {
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 500px;
+    background-color: #FFF;
+    
+}
+
+#imagem-peso {
+    margin-left: 50px;
+    text-align: center;
+    width: 0;
+    border-radius: 10px;
+    height: 350px;
+    justify-content: center;
+    display: flex;
+    background-image: url('./assets/pesoabaixo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    visibility: hidden;
+
+}
+
+.forms{
+    margin: 20px 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-content {
+    margin: 20px 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button {
+    color: #FFF;
+    background-color: #ff6600;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 17px;
+    border: 1px solid black;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: black;
+    color: #FFF;
+}
+
+
+.single-input{
+    border-bottom: 2px solid rgb(200, 200, 200);
+    margin-bottom: 20px;
+    margin-top: 15px;
+    outline: 0;
+    font-size: 17px;
+    color: #000;
+    
+}
+
+.single-input:focus {
+    border-bottom: 2px solid #ff6600;
+}
+
+.text-card{
+    font-size: 25px;
+    color: #ff6600;
+     font-family: 'Gabarito', sans-serif; 
+}
+
+#resultado {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #ff6600;
+    font-family: 'Gabarito', sans-serif; 
+    visibility: hidden;
+}
+
+#number-result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #000;
+    font-family: 'Gabarito', sans-serif;
+    visibility: hidden;
+    
+}
+
+footer {
+    color: #FFF;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 90px; 
+    flex-direction: column;
+}
+
+.social-media {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.text-footer{
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Gabarito', sans-serif; 
+    margin-bottom: 20px;
+}
+
+@media(max-width: 768px){
+
+    .main-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-content{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+       
+    
+    }
+
+    .card {
+        margin-top: 10px;
+        width: 300px;
+        border: 1px solid black;
+        border-radius: 10px;
+        height: 500px;
+        background-color: #FFF; 
+        display: block;
+    }
+
+    #imagem-peso {
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+        height: 350px;
+        justify-content: center;
+        display: block;
+        background-image: url('./assets/pesoabaixo.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        visibility: hidden;
+    }
+
+}

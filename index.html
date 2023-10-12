@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcular IMC</title>
+</head>
+<body>
+
+    
+
+    <div class="main-container">
+        <div class="main-content">
+            <div class="card">
+                <div class="logo-content">
+                    <img src="./assets/peso.jpg" alt="logo" class="logo">
+                </div>
+
+                <div class="forms">
+                   
+                        <label for="">
+                            Informe sua altura
+                        </label>
+                        <input class="single-input" type="text" name="altura" id="altura" placeholder="Digite sua altura"> 
+                   
+                        <label for="">
+                            Informe seu peso
+                        </label>
+                        <input class="single-input" type="text" name="peso" id="peso" placeholder="Digite seu peso">
+                  
+                    </form>
+                </div>
+                <div class="result-content">
+                    <button onclick="enviar()" id="button-calcular" >Calcular</button>
+                    <div class="button-result"></div>
+                    <span class="text-card">Resultado:</span>
+                    <div id="number-result">0,00</div>
+                </div>
+                <div id="resultado">
+                    NORMAL
+                </div>
+            </div>
+
+            <div id="imagem-peso"> </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <span class="text-footer">
+           Desenvolvido por Rafael Andrade &copy; 
+        </span>
+
+        <div class="social-media">
+            <a href="https://www.instagram.com/rafael.anddrade_/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+         
+            <a href="https://github.com/R4fael-Andrade" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rafael-andrade-48b4a9293/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a> 
+        </div>
+    </footer>
+    
+    
+    
+    <script src="https://kit.fontawesome.com/9d494598d5.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
