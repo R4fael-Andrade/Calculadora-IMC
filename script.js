@@ -16,7 +16,7 @@ function enviar(){
 
 
 
-    if(altura === ''){
+    if(altura === '' || peso === ''){
         alert('Preencha os valores corretamente')
         window.location.reload(true);
     }
